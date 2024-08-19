@@ -1,4 +1,4 @@
-package org.example;
+package org.coops;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
