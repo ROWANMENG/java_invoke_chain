@@ -1,0 +1,209 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Results</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 20px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+            }
+            th, td {
+                border: 1px solid #ddd;
+                text-align: left;
+                padding: 8px;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .status-pass {
+                color: green;
+            }
+            .status-fail {
+                color: red;
+            }
+            pre {
+                background-color: #000000 !important;
+                color: #ffffff !important;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Status</th>
+                <th>Reason</th>
+                <th>Exit Code</th>
+                <th>Stderr</th>
+                <th>Stdout</th>
+                <th>Test</th>
+            </tr>
+            
+            <tr>
+                <td class="status-PASS">PASS</td>
+                <td></td>
+                <td>0</td>
+                <td>&nbsp;</td>
+                <td><pre><code class="language-shell">[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:calculator >-----------------------
+[INFO] Building calculator 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ calculator ---
+[INFO] Deleting /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ calculator ---
+[INFO] argLine set to "-javaagent:/Users/jimmy/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target/jacoco.exec"
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ calculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ calculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ calculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ calculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target/test-classes
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ calculator ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.calculator.controller.CalculatorControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.28 s - in com.example.calculator.controller.CalculatorControllerTest
+[INFO] Running com.example.calculator.service.CalculatorServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.example.calculator.service.CalculatorServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.7:report (default-cli) @ calculator ---
+[INFO] Loading execution data file /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target/jacoco.exec
+[INFO] Analyzed bundle 'calculator' with 3 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.104 s
+[INFO] Finished at: 2024-08-02T20:56:55+08:00
+[INFO] ------------------------------------------------------------------------
+</code></pre></td>
+                <td><pre><code class="language-python">{'test_behavior': 'Test the addition of two positive numbers\n', 'lines_to_cover': '[9-11]\n', 'test_name': 'test_add_positive_numbers\n', 'test_code': '@Test\npublic void testAddPositiveNumbers() {\n    assertEquals(5, calculatorService.add(2, 3));\n}\n', 'new_imports_code': '""\n', 'test_tags': 'happy path'}</code></pre></td>
+            </tr>
+            
+            <tr>
+                <td class="status-PASS">PASS</td>
+                <td></td>
+                <td>0</td>
+                <td>&nbsp;</td>
+                <td><pre><code class="language-shell">[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:calculator >-----------------------
+[INFO] Building calculator 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ calculator ---
+[INFO] Deleting /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ calculator ---
+[INFO] argLine set to "-javaagent:/Users/jimmy/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target/jacoco.exec"
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ calculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ calculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ calculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ calculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target/test-classes
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ calculator ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.calculator.controller.CalculatorControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.288 s - in com.example.calculator.controller.CalculatorControllerTest
+[INFO] Running com.example.calculator.service.CalculatorServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.example.calculator.service.CalculatorServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.7:report (default-cli) @ calculator ---
+[INFO] Loading execution data file /Users/jimmy/Documents/My Drive/workspace/agentResearch/coops-ultra/apps/analyzer/sample/java_spring_calculator/target/jacoco.exec
+[INFO] Analyzed bundle 'calculator' with 3 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.174 s
+[INFO] Finished at: 2024-08-02T20:56:59+08:00
+[INFO] ------------------------------------------------------------------------
+</code></pre></td>
+                <td><pre><code class="language-python">{'test_behavior': 'Test the subtraction of two positive numbers\n', 'lines_to_cover': '[13-15]\n', 'test_name': 'test_subtract_positive_numbers\n', 'test_code': '@Test\npublic void testSubtractPositiveNumbers() {\n    assertEquals(1, calculatorService.subtract(3, 2));\n}\n', 'new_imports_code': '""\n', 'test_tags': 'happy path'}</code></pre></td>
+            </tr>
+            
+            <tr>
+                <td class="status-FAIL">FAIL</td>
+                <td>Error validating test: 'UnitTestGenerator' object has no attribute 'log_failure'</td>
+                <td>None</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><pre><code class="language-python">{'test_behavior': 'Test the multiplication of a positive number with zero\n', 'lines_to_cover': '[17-19]\n', 'test_name': 'test_multiply_with_zero\n', 'test_code': '@Test\npublic void testMultiplyWithZero() {\n    assertEquals(0, calculatorService.multiply(3, 0));\n}\n', 'new_imports_code': '""\n', 'test_tags': 'edge case'}</code></pre></td>
+            </tr>
+            
+            <tr>
+                <td class="status-FAIL">FAIL</td>
+                <td>Error validating test: 'UnitTestGenerator' object has no attribute 'log_failure'</td>
+                <td>None</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><pre><code class="language-python">{'test_behavior': 'Test the division of a number by itself\n', 'lines_to_cover': '[21-26]\n', 'test_name': 'test_divide_by_self\n', 'test_code': '@Test\npublic void testDivideBySelf() {\n    assertEquals(1, calculatorService.divide(3, 3));\n}\n', 'new_imports_code': '""\n', 'test_tags': 'edge case'}</code></pre></td>
+            </tr>
+            
+        </table>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    </body>
+    </html>
+    
